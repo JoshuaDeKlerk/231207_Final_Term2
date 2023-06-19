@@ -1,0 +1,311 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    width: 100%;
+    height: 650px;
+    background-image: url(../assets/bimo-luki-mH8EXhWyKbs-unsplash.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    position: relative;
+    z-index: 1;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 60px;
+    position: absolute;
+    float: left;
+    margin: 16px 46px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #000000;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+.logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+}
+
+nav ul {
+    max-height: 0px;
+    background: #000;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+.showing {
+          max-height: 34em;
+    }
+
+nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+}
+
+.menu-icon {
+    display: block;
+}
+
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  background-color: #1a1a1a;
+  border-radius: 40px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 40px;
+  outline: none;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  transform: scale(1.5) translateX(-10px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.about-us {
+    position: relative;
+    height: 730px;
+    width: 100%;
+    background-color: #DADADA;
+    margin-top: -120px;
+    margin-bottom: 0;
+}
+
+.about-us-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+}
+
+.about-us-box {
+    width: 654px;
+    height: 400px;
+    background-image: url(../assets/raphael-nogueira-Znvxeud6sDc-unsplash.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.about-us-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    color: white;
+}
+
+.about-us-box h1 {
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 150px;
+    position: relative; 
+    z-index: 4; 
+}
+
+.welcome-box {
+    width: 1100px;
+    height: 225px;
+    background: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.welcome-box h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.welcome-box p {
+    font-size: 24px;
+    font-weight: normal;
+    color: #000;
+}
+
+.subs-section {
+    height: 800px;
+    background-color: #CAB2B2;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.subs-title {
+    font-size: 48px;
+    margin-top: 50px;
+    transform: translateY(20px);
+}
+
+.subs-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.subs-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    margin: 0 15px;
+    position: relative;
+}
+
+.subs-overlay {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subs-overlay-text {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
